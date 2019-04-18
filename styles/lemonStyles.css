@@ -100,6 +100,16 @@ img {
 .slick-dots li.slick-active button:before {
     color: #FFBE00
 }
+/* ==Chartist
+------------------------------------------------------------*/
+.ct-label { font-family: Roboto, sans-serif; font-weight: 900; }
+.ct-slice-pie { stroke: #222; stroke-width: 5px; }
+.ct-series-a .ct-slice-pie { fill: #B279F2; }
+.ct-series-b .ct-slice-pie { fill: #99FF88; }
+.ct-series-c .ct-slice-pie { fill: #FFF689; }
+.ct-series-d .ct-slice-pie { fill: #75B1FF; }
+.ct-series-e .ct-slice-pie { fill: #FFA774; }
+.ct-series-f .ct-slice-pie { fill: #FF5C6D; }
 /* -----------------------------------------------------------
     =Typography
 ------------------------------------------------------------*/

@@ -25,11 +25,12 @@
         <link href="lightbox/lightbox.min.css" rel="stylesheet">
 
         <!--Production: Custom styles for this website -->
-        <link href="styles/lemonStyles.min.css?v1" rel="stylesheet" media="screen">
-        <link href="styles/lemonStylesPrint.min.css?v1" rel="stylesheet" media="print">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+        <link href="styles/lemonStyles.css?v1" rel="stylesheet" media="screen">
+        <link href="styles/lemonStylesPrint.css?v1" rel="stylesheet" media="print">
 
 
-        <!--Local & Beta: Custom styles for this website -->        
+        <!--Local & Beta: Custom styles for this website -->
         <!-- <link href="styles/lemonStyles.css" rel="stylesheet" media="screen">
         <link href="styles/lemonStylesPrint.css" rel="stylesheet" media="print"> -->
 
@@ -116,8 +117,8 @@
                         </div>
                         <div class="cell half">
                             <h2 class="h3 text-left text-center handwritten">My name is Lisa.</h2>
-                            <p>
-                                    Curiosity is at the fiber of my being. My hunger for learning has given me insight into the worlds of development, technology, design, and marketing—to name a few. No matter what you’re working on, I want to know more about it.                    
+                            <p class="full-width">
+                                     My passion for learning has given me insight into the worlds of development, technology, design, and marketing—to name a few. No matter what you’re working on, I want to know more.
                             </p>
 
                         </div>
@@ -134,11 +135,11 @@
         <section class="about border-yellow-bottom border-black-top" id="about">
             <div class="container">
                 <h2 class="section-header text-yellow handwritten">Who I am</h2>
-                <p>I am... a giant nerd. I like video games. A lot. I like cats even more. I read all of the time. My piles of science fiction are the same height as my piles of non-fiction. </p>
+                <p>I am a <em>giant nerd</em>. I am curious about everything. I constantly seek out and immerse myself in all types of education. I tend to focus on learning things that are related to development, design, or marketing. </p>
 
-                <p> I am passionate about learning new things. I constantly seek out and immerse myself in all types of education. I tend to focus on learning things that are related to development, design, or marketing. </p>
+                <p>What I learn doesn't stop with me. I have taught many others how to do the things that I do. In fact, I was a lead instructor for a <a href="https://www.grandcircus.co/" class="text-yellow" target="_blank">Grand Circus</a> bootcamp.</p>
 
-                <p>I love to get involved in any project that I can help succeed. I'm usually involved with more than one project at a time. If you're into the kind of stuff I'm into, there's a good chance we have or will run into each other at one of the many events or meetups Grand Rapids has to offer.</p>
+                <p>I love getting involved. If you're into the kind of stuff I'm into, there's a good chance we have or will run into each other at one of the many events or meetups Grand Rapids has to offer.</p>
             </div>
             <!-- /.about -->
         </section>
@@ -147,16 +148,19 @@
         <section class="vh-center portfolio border-yellow-bottom ">
             <div class="container">
                 <h2 class="handwritten section-header text-yellow">Proof</h2>
-                <p class="section-text text-white">Take a look at some of my portfolio items below. On desktop? Hover over the photos for more info. On your phone? Click the yellow information button. Lastly, click the image in the middle if you want to zoom in on its nitty gritty.</p>
-                <p class="text-white">Want to see my code? Check out my
-                        <span class="no-print code-links">
-                            <a class="text-yellow" href="https://github.com/lisalemons" target="_blank" title="Check out my GitHub"><i class="fa fa-github"></i>&nbsp;GitHub</a>
-                        </span>
-                        or
-                        <span class="no-print code-links">
-                            <a class="text-yellow" href="https://codepen.io/lemonflip/" target="_blank" title="Check out my CodePen"><i class="fa fa-code"></i>&nbsp;CodePen</a>
-                        </span>.</p>
+                <p class="text-white"><strong>Want to see my latest code?</strong> Check out my regularly updated
+                    <span class="no-print code-links">
+                        <a class="text-yellow" href="https://github.com/lisalemons" target="_blank" title="Check out my GitHub"><i class="fa fa-github"></i>&nbsp;GitHub</a>
+                    </span>
+                    or
+                    <span class="no-print code-links">
+                        <a class="text-yellow" href="https://codepen.io/lemonflip/" target="_blank" title="Check out my CodePen"><i class="fa fa-code"></i>&nbsp;CodePen</a>
+                    </span>.</p>
 
+                <p class="section-text text-white">Otherwise, take a look at some of my portfolio items below.</p>
+                <p class="section-text text-white"><strong>On desktop?</strong> Hover over the photos for more info. </p>
+                <p class="section-text text-white"><strong>On your phone?</strong> Click the yellow information button.</p>
+                <p class="section-text text-white">Lastly, click the image in the middle if you want to zoom in on its nitty gritty.</p>
             </div>
             <div class="container oversized">
                 <div class="portfolio-slider">
@@ -426,28 +430,19 @@
         <section class="skills border-black-bottom">
             <div class="card container oversized border-yellow-bottom center-block bg-black text-white">
                     <h2 class="text-yellow handwritten section-header">My toolkit</h2>
-                    <p class="text-center container small padding-v-1">Here's a breakdown of the different frameworks, languages, and software that I work with.</p>
+                    <p class="section-text text-center container medium padding-v-1">Here's a breakdown of the different frameworks, languages, and software that I work with.</p>
                     <div class="grid">
-                        <div class="cell third">
+                        <div class="cell half">
                             <div class="chart-container padding-v-1">
-                                <h3 class="handwritten text-white text-center">Frameworks</h3>
-                                <canvas id="chartFrameworks">
-                                </canvas>
+                                <h3 class="handwritten text-white text-center">Frameworks / Preprocessors</h3>
+                                <div class="ct-chart ct-square" id="chartFrameworks"></div>
                             </div>
                         </div><!-- /end col-->
-                        <div class="cell third">
+                        <div class="cell half">
                              <div class="chart-container padding-v-1">
                                 <h3 class="handwritten text-white text-center">Languages</h3>
-                                <canvas id="chartLanguages">
-                                </canvas>
+                                <div class="ct-chart ct-square" id="chartLanguages"></div>
                              </div>
-                        </div><!-- /end col-->
-                       <div class="cell third">
-                            <div class="chart-container padding-v-1">
-                                <h3 class="handwritten text-white text-center">Software</h3>
-                                <canvas id="chartSoftware">
-                                </canvas>
-                            </div>
                         </div><!-- /end col-->
                     </div><!-- /end row -->
             </div><!-- /end container -->
@@ -465,17 +460,17 @@
                 </div>
             </div>
             <div class="only-print">
-                <!-- 
+                <!--
                     To anyone looking at my code:
 
                     When I first made this website, I created a seperate print stylesheet to turn the entire site into a resume.
-                    While that was a cool feature, it never rendered the same on every device. It's harder to do responsive design 
+                    While that was a cool feature, it never rendered the same on every device. It's harder to do responsive design
                     for printer styles, so I just moved back to the "normal" way of doing things.
 
                     For the sake of prosperity, I have kept my resume and the stylesheet in my code. You can try to print the site
-                    to see it in action. 
+                    to see it in action.
 
-                    Just keep in mind that what is in the code is not something I update anymore. The PDF and the site itself are 
+                    Just keep in mind that what is in the code is not something I update anymore. The PDF and the site itself are
                     always the most accurate and up-to-date resume I have.
                 -->
                 <div class="logo-print">
@@ -605,7 +600,7 @@
         </section>
         <!--end Resume -->
 
-        <!--Contact me-->
+        <!-- Contact me -->
         <a id="contact"></a>
         <section class="contact vh-center">
             <div class="card container bg-black text-white border-yellow-bottom ">
@@ -623,6 +618,8 @@
                 <div id="success"></div>
             </div>
         </section>
+
+        <!-- Footer -->
         <footer class="no-print">
             <div class="container">
                 <div class="row">
@@ -652,17 +649,21 @@
             </div>
             <!--/end container-->
         </footer>
+        <!-- /Footer -->
         <!-- Bootstrap core JavaScript
     ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
         <!--jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript" src="lightbox/lightbox.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" integrity="sha256-Uv9BNBucvCPipKQ2NS9wYpJmi8DTOEfTA/nH2aoJALw=" crossorigin="anonymous"></script>
+        <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
         <!--Production & Beta: Custom JavaScript/jQuery-->
-        <script src="scripts/master.min.js?v=1.1" type="text/JavaScript"></script>
+        <script src="scripts/master.js?v=1.2" type="text/JavaScript"></script>
 
         <!--Local & Beta: Custom JavaScript/jQuery-->
         <!-- <script src="scripts/master.js?v1" type="text/JavaScript"></script> -->
