@@ -1,0 +1,106 @@
+/* --------------------------------------------------------
+Style Sheet for Lisa Lemons' Resume
+
+version: 2
+last modified: 3/6/2018 by Lisa Lemons
+author:  Lisa Lemons
+email: me@lisa-lemons.com
+website: http://lisa-lemons.com
+
+This stylesheet only affects my website when it is being printed.
+It strips my website of everything but my resume section, then formats
+to be more printer friendly.
+
+As a result, I have an easily updatable dynamic resume.
+
+If you're interested in doing something similar, hit me up!
+----------------------------------------------------------*/
+
+/* Hide everything 
+	but my resume and my logo,
+	then make it pretty
+	*/
+p, body, ul, ul > li {
+	font-size: 12pt;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 300;
+	color: #222;
+}
+.top-pic, .about, .portfolio, .skills, .contact,
+	.education,  .no-print {
+	display: none;
+}	
+
+strong {
+	font-weight: 700;
+}
+#backToTop {
+	display: none;
+	visibility: hidden;
+}
+.summary-print {
+	display: block;
+}
+.skills-print {
+	padding-top: 15px;
+	display: block;
+	width: 100%;
+}
+.third {
+	width: 30%;
+	padding: 0 15pt;
+	float: left;
+}
+.contact-print {
+	display: block;
+	padding-top:  15px;
+}
+.contact-print strong {
+	color: #FFBE00;
+}
+.other-facts-print {
+	display: block;
+}
+
+.other-facts-print a {
+	color: #FFBE00;
+}
+
+h2 {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+h3 {
+	border-bottom: 5px solid #FFBE00;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
+}
+h4 {
+	font-size: 18pt;
+	font-weight: 700;
+}
+
+h5 {
+	font-size: 16pt;
+}
+h6 {
+	font-size: 14pt;
+}
+h3, h4, h5, h6 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #222;
+}
+.experience-block {
+	padding-bottom: 10px;
+}
+/* Force iOS browsers to render my telephone correctly */
+a[x-apple-data-detectors] {
+	color: inherit !important;
+	text-decoration: none !important;
+	font-size: inherit !important;
+	font-family: inherit !important;
+	font-weight: inherit !important;
+	line-height: inherit !important;
+}
