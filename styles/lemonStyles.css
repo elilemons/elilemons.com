@@ -28,7 +28,7 @@ CONTENTS:
 ------------------------------------------------------------*/
 
 /* -----------------------------------------------------------
-    =General  
+    =General
 ------------------------------------------------------------*/
 html, body {
     font-size: 21px;
@@ -40,7 +40,7 @@ em,
 h1,
 h2,
 h3,
-h4, 
+h4,
 h5,
 h6,
 strong {
@@ -49,11 +49,11 @@ strong {
 strong {
     font-weight: 700;
 }
-img { 
+img {
     width: 100%;
 }
 /* -----------------------------------------------------------
-    =Overrides  
+    =Overrides
 ------------------------------------------------------------*/
 /* ==Browser
 ------------------------------------------------------------*/
@@ -76,7 +76,7 @@ img {
 /* ==Bootstrap
 ------------------------------------------------------------*/
 .container {
-    width: 100%;        
+    width: 100%;
     margin: 0 auto;
 }
 /* ==Slick
@@ -106,7 +106,7 @@ img {
 h1, .h1,
 h2, .h2,
 h3, .h3,
-h4, .h4, 
+h4, .h4,
 h5, .h5,
 h6 {
     margin-top: 0;
@@ -152,13 +152,13 @@ em {
     =Navigation
 ------------------------------------------------------------*/
 #backToTop {
-    position: fixed;    
+    position: fixed;
     bottom: 15;
     right: 15;
-    z-index: 100;    
+    z-index: 100;
     font-size: 3em;
     color: #FFBE00;
-    text-shadow: 3px 3px #222;    
+    text-shadow: 3px 3px #222;
 }
 .pointer-cursor {
     cursor: pointer;
@@ -170,7 +170,7 @@ em {
     margin-bottom: 0;
     padding-bottom: 0;
 
-    webkit-border-radius: 0!important;
+    -webkit-border-radius: 0!important;
     -moz-border-radius: 0!important;
     border-radius: 0!important;
 }
@@ -236,7 +236,7 @@ em {
     align-items: center;
 }
 .cell.half {
-    flex: 0 0 50%;
+    flex: 1 0 50%;
 }
 .container {
     max-width: 960px;
@@ -310,16 +310,16 @@ footer .social-icons a {
 /* -----------------------------------------------------------
     =Content
 ------------------------------------------------------------*/
-/* ==Hero 
+/* ==Hero
 ------------------------------------------------------------*/
 #hero {
     background-image: url(../images/bg-colorful-streets.jpeg);
 }
 .vh-center {
-    min-height: 100vh;    
+    min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    
+
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -533,7 +533,7 @@ section {
     text-align: center
 }
 /* -----------------------------------------------------------
-    =Breakpoints  
+    =Breakpoints
 ------------------------------------------------------------*/
 /* ==Fix for Bootstrap 3 Collapse bug
 ------------------------------------------------------------*/
@@ -547,7 +547,7 @@ section {
 @media (min-width:768px) and (max-width:991px) {
     html, body {
         font-size: 18px;
-    }    
+    }
     .profile-picture {
         max-width: 250px;
     }
