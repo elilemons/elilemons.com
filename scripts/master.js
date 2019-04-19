@@ -105,21 +105,18 @@ function backToTop() {
 // 3: Advanced
 // 4: Expert
 let chartFrameworksData = {
-  labels: ["Angular 7", "AngularJS", "Bootstrap", "Sass", "Lodash", "Redux"],
-  series: [3, 4, 4, 4, 4, 2],
+  labels: ["Redux", "Angular 7", "AngularJS", "Bootstrap", "Sass", "Lodash", ],
+  series: [2, 3, 4, 4, 4, 4, ],
 },
-  chartFrameworksOptions = {
-    labelOffset: 10,
-    labelPosition: 'inside',
-  };
-new Chartist.Pie('#chartFrameworks', chartFrameworksData, chartFrameworksOptions);
-
-let chartLanguagesData = {
+chartLanguagesData = {
   labels: ["HTML5", "CSS3", "JavaScript", "jQuery", "TypeScript"],
-  series: [4, 4, 4, 4, 3]
+  series: [4, 5, 4, 4, 2]
 },
-  chartLanguagesOptions = {
-    labelOffset: 10,
-    labelPosition: 'inside',
-  };
-new Chartist.Pie('#chartLanguages', chartLanguagesData, chartLanguagesOptions);
+chartOptions = {
+  donut: true,
+  donutWidth: 80,
+  labelPosition: 'inside',
+};
+// Colors are handled in lemonStyles.css
+new Chartist.Pie('#chartFrameworks', chartFrameworksData, chartOptions);
+new Chartist.Pie('#chartLanguages', chartLanguagesData, chartOptions);

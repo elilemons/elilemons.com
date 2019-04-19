@@ -30,6 +30,7 @@ CONTENTS:
 /* -----------------------------------------------------------
     =General
 ------------------------------------------------------------*/
+* { box-sizing: border-box; }
 html, body {
     font-size: 21px;
     font-weight: 300;
@@ -102,14 +103,14 @@ img {
 }
 /* ==Chartist
 ------------------------------------------------------------*/
-.ct-label { font-family: Roboto, sans-serif; font-weight: 900; }
-.ct-slice-pie { stroke: #222; stroke-width: 5px; }
-.ct-series-a .ct-slice-pie { fill: #B279F2; }
-.ct-series-b .ct-slice-pie { fill: #99FF88; }
-.ct-series-c .ct-slice-pie { fill: #FFF689; }
-.ct-series-d .ct-slice-pie { fill: #75B1FF; }
-.ct-series-e .ct-slice-pie { fill: #FFA774; }
-.ct-series-f .ct-slice-pie { fill: #FF5C6D; }
+.ct-label { font-family: Roboto, sans-serif; font-weight: 900; fill: #222; }
+/* .ct-slice-donut { stroke: #222; stroke-width: 5px; } */
+.ct-series-a .ct-slice-donut { stroke: #B279F2; }
+.ct-series-b .ct-slice-donut { stroke: #99FF88; }
+.ct-series-c .ct-slice-donut { stroke: #FFF689; }
+.ct-series-d .ct-slice-donut { stroke: #75B1FF; }
+.ct-series-e .ct-slice-donut { stroke: #FFA774; }
+.ct-series-f .ct-slice-donut { stroke: #FF5C6D; }
 /* -----------------------------------------------------------
     =Typography
 ------------------------------------------------------------*/
@@ -240,7 +241,7 @@ em {
     display: flex;
     flex-direction: column;
     flex: 1 1 0%;
-    justify-content: center;
+    justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
@@ -579,8 +580,15 @@ section {
     .grid {
         flex-direction: column;
     }
+    .grid.charts-grid {
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .grid.charts-grid > .cell.half {
+        width: 100%;
+    }
     .cell.half, .cell.third {
-        flex: 0 0 auto;
+        flex: 1 0 auto;
     }
     .chart-container {
         position: relative;
