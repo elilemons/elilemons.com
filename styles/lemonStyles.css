@@ -260,6 +260,7 @@ em {
 }
 .container.small {
     max-width: 640px;
+    font-size: inherit; /* Bootstrap has a .small class for text */
 }
 .card {
     padding: 3rem 2rem;
