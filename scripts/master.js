@@ -42,7 +42,6 @@ $(document).ready(function () {
   $('.portfolio-item').hover(function () {
     var moreInfo = $(this).find('.more-info');
     var moreInfoDsiplay = $(moreInfo).css('display');
-    console.log(moreInfoDsiplay);
     if (moreInfoDsiplay === 'none') {
       showPortfolioInfo($(this));
     }
