@@ -249,6 +249,9 @@ em {
 .cell.half {
     flex: 1 0 50%;
 }
+.cell.justify-space-around {
+    justify-content: space-around;
+}
 .container {
     max-width: 960px;
 }
