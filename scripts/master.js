@@ -63,23 +63,29 @@ $(document).ready(function () {
   }
 
   /* Form Submit */
-
-  $("form").submit(function () {
-    if ($("input#phone").val().length != 0) {
-      return false;
-    } else {
-      $.ajax({
-        url: "cgi-sys/formmail.pl",
-        data: $(this).serialize(),
-        type: "POST",
-        success: function () {
-          $("form").css("display", "none");
-          $("#success").text("Thanks for contacting me, I'll be in touch shortly.")
-        }
-      });
-      return false;
-    }
-  });
+  // TODO
+  // $("form").submit(function () {
+  //   if ($("input#phone").val().length != 0) {
+  //     return false;
+  //   } else {
+  //     $.ajax({
+  //       url: "sendEmail.php",
+  //       data: $(this).serialize(),
+  //       type: "POST",
+  //       success: function () {
+  //         $("form").css("display", "none");
+  //         $("#success").text("Thanks for contacting me, I'll be in touch shortly.")
+  //       },
+  //       error: function (error) {
+  //         if (error.status === 401) {
+  //           $("#captcha").contents(error.responseText);
+  //         }
+  //         console.error("There was an error sending your request, the error was: ", error);
+  //       }
+  //     });
+  //     return false;
+  //   }
+  // });
 });
 
 // When the user scrolls down 20px from the top of the document, show the button
