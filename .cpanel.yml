@@ -1,5 +1,13 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/automot5/public_html/lisa-lemons.com/
-    - /bin/cp * $DEPLOYPATH
+    - export DEPLOYPATH=/home/automot5/public_html/lisa-lemons.com
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R bootstrap $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R lightbox $DEPLOYPATH
+    - /bin/cp -R scripts $DEPLOYPATH
+    - /bin/cp -R slick $DEPLOYPATH
+    - /bin/cp -R styles $DEPLOYPATH
