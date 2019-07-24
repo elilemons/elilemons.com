@@ -236,6 +236,7 @@ em {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
+    flex-direction: row;
 }
 .cell {
     display: flex;
@@ -247,10 +248,14 @@ em {
     align-items: center;
 }
 .cell.half {
-    flex: 1 0 50%;
+    width: 50%;
+    height: 100%;
 }
 .cell.justify-space-around {
     justify-content: space-around;
+}
+.cell.align-self-center {
+    align-self: center;
 }
 .container {
     max-width: 960px;
@@ -353,8 +358,8 @@ section {
     color: #fff;
 }
 .profile-picture {
-    max-width: 300px;
-    align-self: center;
+    width: 100%;
+    height: 100%;
 }
 .code-links {
     text-align: center;
@@ -499,7 +504,7 @@ section {
 /* ==Contact
 ------------------------------------------------------------*/
 .contact {
-    min-height: 100vh;
+    min-height: 20vh;
     background-image: url(../images/bg-parachutes.jpeg);
     background-size: cover;
     background-attachment: fixed;
@@ -565,7 +570,7 @@ section {
         font-size: 18px;
     }
     .profile-picture {
-        max-width: 250px;
+        width: 250px;
     }
     #backToTop {
         font-size: 2em;
@@ -592,6 +597,7 @@ section {
         width: 100%;
     }
     .cell.half, .cell.third {
+        width: 100%;
         flex: 1 0 auto;
     }
     .chart-container {
@@ -633,7 +639,8 @@ section {
         font-size: 2em;
     }
     .profile-picture {
-        max-width: 250px;
+        /* max-width: 250px; */
+        width: 250px;
     }
     .more-info {
 		font-size: 25px;
@@ -673,7 +680,7 @@ section {
 
         display: block;
         margin: 0 auto;
-        max-width: 200px;
+        width: 100%;
     }
     .text-center-575 {
         text-align: center;
